@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Call Center Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>YourCallCenter</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Professional Call Center Solutions</h1>
+            <p>Responsive customer service solutions tailored to your business needs</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📞</div>
+                    <h3>Inbound Call Handling</h3>
+                    <p>Professional handling of customer inquiries, orders, and support requests.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📣</div>
+                    <h3>Outbound Campaigns</h3>
+                    <p>Strategic outreach to existing and potential customers for sales and surveys.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💬</div>
+                    <h3>Live Chat Support</h3>
+                    <p>Real-time customer support through web-based chat solutions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Data Management</h3>
+                    <p>Clean and organized customer databases for efficient follow-ups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <h2>Join Our Database</h2>
+            <p>Register your business in our database to receive qualified leads and partnership opportunities</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic Package</h3>
+                    <div class="price">$99</div>
+                    <ul>
+                        <li>Database Listing</li>
+                        <li>Basic Lead Generation</li>
+                        <li>Monthly Reports</li>
+                    </ul>
+                    <button class="btn payment-btn" onclick="makePayment('Basic Package', 99)">Register Now</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3>Premium Package</h3>
+                    <div class="price">$199</div>
+                    <ul>
+                        <li>Featured Database Listing</li>
+                        <li>Priority Lead Generation</li>
+                        <li>Weekly Reports</li>
+                        <li>24/7 Support Access</li>
+                    </ul>
+                    <button class="btn payment-btn" onclick="makePayment('Premium Package', 199)">Register Now</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Enterprise Package</h3>
+                    <div class="price">$349</div>
+                    <ul>
+                        <li>Premium Database Listing</li>
+                        <li>Advanced Lead Generation</li>
+                        <li>Daily Reports</li>
+                        <li>24/7 Dedicated Support</li>
+                        <li>Customized Solutions</li>
+                    </ul>
+                    <button class="btn payment-btn" onclick="makePayment('Enterprise Package', 349)">Register Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Our Call Center</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>With over 10 years of experience in the industry, we've built a reputation for delivering exceptional customer service solutions for businesses of all sizes.</p>
+                    <p>Our team of trained professionals handle thousands of customer interactions daily with professionalism and care.</p>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Clients Served</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <p>123 Business Avenue, Suite 200<br>City, State 12345</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <p>info@yourcallcenter.com</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 YourCallCenter. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">FB</a>
+                <a href="#" class="social-icon">TW</a>
+                <a href="#" class="social-icon">IG</a>
+                <a href="#" class="social-icon">LI</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
